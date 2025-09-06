@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import { About } from './About';
+import Skills from './Skills';
+import { Contact } from './Contact';
+
 
 const MainPage: React.FC = () => {
 
     const [activeSection, setActiveSection] = useState<string>('home');
-    const NAV_ITEMS = ["Home", "About"];
+    const NAV_ITEMS = ["Home", "About", "Skills", "Contact"];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -57,6 +60,8 @@ const MainPage: React.FC = () => {
             </nav >
             <Dashboard scrollToSection={scrollToSection} />
             <About></About>
+            <Skills></Skills>
+            <Contact></Contact>
         </div>
     );
 };
