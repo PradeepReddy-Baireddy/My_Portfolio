@@ -1,3 +1,5 @@
+import { ChevronDown } from "lucide-react";
+
 interface DashProps {
     scrollToSection: (sectionId: string) => void;
 }
@@ -30,10 +32,13 @@ const Dashboard: React.FC<DashProps> = ({ scrollToSection }) => {
                             src="/my_image.jpg"
                             alt="Profile"
                             className="profile-image"
-                            style={{height: "125%"}}
+                            style={{ height: "125%" }}
                         />
                     </div>
                 </div>
+            </div>
+            <div className="scroll-indicator" onClick={() => scrollToSection('about')}>
+                <ChevronDown size={24} />
             </div>
         </section>);
 }
