@@ -18,16 +18,16 @@ export function About() {
                         </p>
                         <div className="about-stats">
                             <div className="stat">
-                                <h3>3</h3>
-                                <p>Years Experience</p>
+                                <h3>8+ years</h3>
+                                <p>Programming experience</p>
+                            </div>
+                            <div className="stat">
+                                <h3>3 years</h3>
+                                <p>Years professional Experience</p>
                             </div>
                             <div className="stat">
                                 <h3>12+ Api's</h3>
                                 <p>Worked and Maintained</p>
-                            </div>
-                            <div className="stat">
-                                <h3>8+</h3>
-                                <p>Happy Clients</p>
                             </div>
                         </div>
                     </div>

@@ -3,12 +3,13 @@ import Dashboard from './Dashboard';
 import { About } from './About';
 import Skills from './Skills';
 import { Contact } from './Contact';
+import Projects from './Projects';
 
 
 const MainPage: React.FC = () => {
 
     const [activeSection, setActiveSection] = useState<string>('home');
-    const NAV_ITEMS = ["Home", "About", "Skills", "Contact"];
+    const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Contact"];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -61,6 +62,7 @@ const MainPage: React.FC = () => {
             <Dashboard scrollToSection={scrollToSection} />
             <About></About>
             <Skills></Skills>
+            <Projects></Projects>
             <Contact></Contact>
         </div>
     );

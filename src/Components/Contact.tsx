@@ -1,4 +1,5 @@
-import { Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { FaLinkedin } from "react-icons/fa";
 export function Contact() {
     return (
         <section id="contact" className="contact">
@@ -18,7 +19,7 @@ export function Contact() {
                                 pradeepbireddy358@gmail.com
                             </a>
                             <a href="https://www.linkedin.com/in/pradeep-reddy-baireddy-374660230" className="contact-link" target="_blank" rel="noopener noreferrer">
-                                <Linkedin size={20} />
+                                <FaLinkedin size={20} />
                                 LinkedIn
                             </a>
                         </div>
