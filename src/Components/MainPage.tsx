@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 import Dashboard from './Dashboard';
 import { About } from './About';
 import Skills from './Skills';
@@ -8,6 +9,7 @@ import Projects from './Projects';
 
 const MainPage: React.FC = () => {
 
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [activeSection, setActiveSection] = useState<string>('home');
     const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -37,6 +39,7 @@ const MainPage: React.FC = () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+        setIsMenuOpen(false);
     };
 
     return (
@@ -57,7 +60,26 @@ const MainPage: React.FC = () => {
                             </button>
                         ))}
                     </div>
+                    <button
+                    className="nav-toggle"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
                 </div>
+                {isMenuOpen && (
+                <div className="nav-mobile">
+                    {NAV_ITEMS.map((item) => (
+                        <button
+                            key={item}
+                            className="nav-mobile-link"
+                            onClick={() => scrollToSection(item.toLowerCase())}
+                        >
+                            {item}
+                        </button>
+                    ))}
+                </div>
+            )}
             </nav >
             <Dashboard scrollToSection={scrollToSection} />
             <About></About>
