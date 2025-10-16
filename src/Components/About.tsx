@@ -23,7 +23,7 @@ export function About() {
                             </div>
                             <div className="stat">
                                 <h3>3 years</h3>
-                                <p>Years professional Experience</p>
+                                <p>professional Experience</p>
                             </div>
                             <div className="stat">
                                 <h3>12+ Api's</h3>
