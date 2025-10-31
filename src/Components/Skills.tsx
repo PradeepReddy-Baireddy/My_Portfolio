@@ -4,14 +4,17 @@ interface Skill {
 }
 
 const skillList: Skill[] = [
-    { name: "JavaScript", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "React", level: 90 },
-    { name: "Node.js", level: 80 },
-    { name: "Python", level: 75 },
-    { name: "CSS/SASS", level: 85 },
-    { name: "MongoDB", level: 70 },
-    { name: "Git", level: 85 }
+    { name: "React", level: 95 },
+    { name: "JavaScript", level: 100 },
+    { name: "TypeScript", level: 95 },
+    { name: "Angular", level: 95 },
+    { name: "Node.js", level: 90 },
+    { name: "CSS/SASS", level: 95 },
+    { name: "Java", level: 95 },
+    { name: "Spring Boot", level: 95 },
+    { name: "Python", level: 90 },
+    { name: "MongoDB", level: 85 },
+    { name: "Git", level: 100 }
 ];
 
 function Skills() {
