@@ -6,7 +6,7 @@ export function About() {
                 <div className="about-content">
                     <div className="about-text">
                         <p>
-                            I'm a passionate full-stack developer with over 3 years of experience
+                            I'm a passionate full-stack developer with around 5 years of experience
                             creating digital solutions that make a difference. I specialize in
                             React, TypeScript, and Node.js, with a strong focus on user experience
                             and clean, maintainable code.
