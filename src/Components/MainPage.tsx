@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Dashboard from './Dashboard';
 import { About } from './About';
-import Skills from './Skills';
+// import Skills from './Skills';
 import { Contact } from './Contact';
 import Projects from './Projects';
+import Resume from './Resume'; 
 
 
 const MainPage: React.FC = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [activeSection, setActiveSection] = useState<string>('home');
-    const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Contact"];
+    const NAV_ITEMS = ["Home", "About", "Resume","Projects", "Contact"];
+    // const NAV_ITEMS = ["Home", "About", "Skills", "Projects", "Contact"];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -83,7 +85,8 @@ const MainPage: React.FC = () => {
             </nav >
             <Dashboard scrollToSection={scrollToSection} />
             <About></About>
-            <Skills></Skills>
+            {/* <Skills></Skills> */}
+            <Resume /> 
             <Projects></Projects>
             <Contact></Contact>
         </div>

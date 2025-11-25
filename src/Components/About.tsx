@@ -6,7 +6,7 @@ export function About() {
                 <div className="about-content">
                     <div className="about-text">
                         <p>
-                            I'm a passionate full-stack developer with over 3 years of experience
+                            I'm a passionate full-stack developer with around 5 years of experience
                             creating digital solutions that make a difference. I specialize in
                             React, TypeScript, and Node.js, with a strong focus on user experience
                             and clean, maintainable code.
@@ -22,7 +22,7 @@ export function About() {
                                 <p>Programming experience</p>
                             </div>
                             <div className="stat">
-                                <h3>3 years</h3>
+                                <h3>5 years</h3>
                                 <p>professional Experience</p>
                             </div>
                             <div className="stat">
