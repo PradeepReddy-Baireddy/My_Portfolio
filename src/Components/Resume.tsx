@@ -1,7 +1,8 @@
 import React from 'react';
 import { Download, Eye } from 'lucide-react';
 
-const RESUME_URL = './Pradeep-Reddy-Baireddy.pdf';
+// const RESUME_URL = './Pradeep-Reddy-Baireddy.pdf';
+const RESUME_URL = './Pradeep Reddy Baireddy.pdf';
 
 const Resume: React.FC = () => {
     return (
